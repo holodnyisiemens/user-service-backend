@@ -1,0 +1,23 @@
+# Зависимости Node.js (ставятся через npm install)
+node_modules/
+
+# Локальные настройки окружения (пароли, DATABASE_URL) — не коммитить
+.env
+.env.*
+
+# Логи
+*.log
+
+# Служебные файлы ОС и редакторов
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Блокировки офисных документов (Word / OneDrive / LibreOffice)
+~$*
+.~lock.*#
+
+# Примечание: package-lock.json коммитим (воспроизводимость установки),
+# отчёты .docx/.pdf тоже коммитим — это результат работы.

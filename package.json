@@ -1,0 +1,15 @@
+{
+  "name": "lab9-user-service-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Бэкенд сервиса управления пользователями (PostgreSQL) — ЛР 9",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test.js",
+    "db:up": "docker run --rm -d --name lab9-pg -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=lab9 -p 5433:5432 postgres:16-alpine",
+    "db:down": "docker stop lab9-pg"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
